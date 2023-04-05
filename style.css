@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    animation: changeBg 7s infinite alternate linear;
+}
+
+@keyframes changeBg {
+    0%{
+        background-color: #ee6055;
+    }
+    25%{
+        background-color: #60d394;
+    }
+    50%{
+        background-color: #aaf683;
+    }
+    75%{
+        background-color: #ffd97d;
+    }
+    100%{
+        background-color: #ff9b85;
+    }
+}
+
+.container {
+    margin: 40px auto;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.stopwatch_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.stopwatch_screen h1 {
+    font-size: 64px;
+}
+
+.stopwatch_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    width: 75px;
+    height: 75px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.button:hover, .button:active {
+    transform: scale(1.05);
+}
+
+.stop {
+    background-color: #b43938;
+}
+
+.reset {
+    background-color: #2b466a;
+}
+
+.start {
+    background-color: #506c48;
+}
